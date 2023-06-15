@@ -1,0 +1,45 @@
+@media (max-width: 778px) {
+    /* 
+        Header
+    */
+    header .main-menu {
+        order: 1;
+        width: 100%;
+    }
+
+    header .netflixLogo {
+        order: -1;
+        width: 50%;
+    }
+    
+    header .sub-menu {
+        order: 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    /* 
+        Header
+    */
+    header .netflixLogo {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header .main-menu ul li {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    header .sub-menu {
+        width: 100%;
+        order: 1;
+    }
+
+    header .sub-menu ul {
+        justify-content: center;
+        padding: 10px 0px;
+    }
+}
