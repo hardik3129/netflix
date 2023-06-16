@@ -1,12 +1,14 @@
 
 
-@media (max-width: 778px) {
+@media (max-width: 900px) {
     /* 
         Header
     */
     header .main-menu {
         order: 1;
         width: 100%;
+        margin-left: 24px;
+        padding-top: 20px;
     }
 
     header .netflixLogo {
@@ -22,21 +24,39 @@
 
     /* 
         popular movie & default media-query all movie section
+    */
+    .popular-movie {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 778px) {
+    /* 
+        popular movie & default media-query all movie section
         sub-link in link
     */
     .popular-movie, .sub-link {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
+        grid-gap: 20px;
     }
 }
 
 @media (max-width: 500px) {
+    /* 
+        main container
+    */
+    .main-container a {
+        font-size: 15px;
+    }
+    
     /* 
         main-heading
     */
     .main-heading {
         text-align: center;
         font-size: 18px;
+        margin: 14.94px 0px;
     }
     
 
@@ -45,6 +65,7 @@
     */
     header {
         position: static;
+        font-size: 15px;
     }
     
     header .netflixLogo {
@@ -53,16 +74,21 @@
         padding: 0;
         justify-content: center;
     }
+
+    header .main-menu {
+        margin-left: 0;
+    }
     
     header .main-menu ul li {
         width: 100%;
         text-align: center;
-        padding: 5px 0px;
+        padding: 7px 0px;
     }
 
     header .sub-menu {
         width: 100%;
         order: 1;
+        padding-top: 13px;
     }
 
     header .sub-menu ul {
@@ -75,28 +101,17 @@
         popular movie & default media-query all movie section 
     */
     .popular-movie {
-        display: block;
+        display: grid;
+        grid-template-columns: auto;
     }
-
-    .popular-movie a {
-        display: block;
-        margin: 10px 0px;
-    }
-
     .popular-movie a img {
         width: 100%;
-        display: block;
         margin: 0 auto;
     }
-    
 
     /* 
         Link section
     */
-    .link {
-        padding: 35px;
-    }
-    
     .social-icon {
         display: grid;
         grid-template-columns: repeat(2, minmax(10px, 1fr));
@@ -105,12 +120,25 @@
 
     .social-icon a {
         width: 100%;
+        height: 100%;
         display: block;
         text-align: center;
+        font-size: 30px;
+        padding-top: 0;
     }
     
     .sub-link {
         grid-template-columns: auto;
         text-align: center;
+        margin-top: 10px;
     }
+
+
+    /* 
+        footer
+    */
+    footer {
+        font-size: 15px;
+    }
+    
 }

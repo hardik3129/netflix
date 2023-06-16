@@ -18,6 +18,7 @@ body {
     background-color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--light);
+    line-height: 1.4;
 }
 
 img {
@@ -108,7 +109,7 @@ h6 {
 */
 .main-heading {
     padding: 60px 0px 0px;
-    margin: 20px 0px;
+    margin: 19.92px 0px;
 }
 
 
@@ -137,8 +138,12 @@ header {
 }
 
 /* --- main menu --- */
+.main-menu {
+    padding: 0 0 0 145px;
+}
+
 .main-menu ul li {
-    padding: 0px 5px 0px;
+    padding: 0px 7px 0px;
 }
 
 .main-menu ul a {
@@ -164,11 +169,13 @@ header {
 .popular-movie {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 160px;
     grid-gap: 20px;
 }
 
 .popular-movie a img {
     transition: .3s;
+    border-radius: 2px;
 }
 
 .popular-movie a img:hover {
