@@ -1,3 +1,5 @@
+
+
 @media (max-width: 778px) {
     /* 
         Header
@@ -16,12 +18,35 @@
         order: 0;
         width: 50%;
     }
+
+
+    /* 
+        popular movie & default media-query all movie section
+        sub-link in link
+    */
+    .popular-movie, .sub-link {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
+    /* 
+        main-heading
+    */
+    .main-heading {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+
     /* 
         Header
     */
+    header {
+        position: static;
+    }
+    
     header .netflixLogo {
         width: 100%;
         display: flex;
@@ -43,5 +68,49 @@
     header .sub-menu ul {
         justify-content: center;
         padding: 10px 0px;
+    }
+
+
+    /* 
+        popular movie & default media-query all movie section 
+    */
+    .popular-movie {
+        display: block;
+    }
+
+    .popular-movie a {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .popular-movie a img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    /* 
+        Link section
+    */
+    .link {
+        padding: 35px;
+    }
+    
+    .social-icon {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .social-icon a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .sub-link {
+        grid-template-columns: auto;
+        text-align: center;
     }
 }
