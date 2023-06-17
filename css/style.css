@@ -23,6 +23,8 @@ body {
 
 img {
     max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 a {
@@ -96,12 +98,6 @@ h6 {
     display: flex;
     flex-wrap: wrap;
 }
-.justify-between {
-    justify-content: space-between;
-}
-.justify-evenly {
-    justify-content: space-evenly;
-}
 
 
 /* 
@@ -130,16 +126,19 @@ header {
 /* --- logo --- */
 .netflixLogo {
     padding: 0px 0px 0px 30px;
+    width: 10%;
 }
 
-.netflixLogo img {
-    width: 100px;
-    height: 35px;
+.netflixLogo a {
+    text-align: center;
 }
 
 /* --- main menu --- */
 .main-menu {
-    padding: 0 0 0 145px;
+    padding: 0 0 0 115px;
+    width: 65%;
+    /* display: flex;
+    align-items: self-end; */
 }
 
 .main-menu ul li {
@@ -158,7 +157,6 @@ header {
 
 .sub-menu ul li {
     padding: 0px 6px 0px;
-    font-weight: 500;
     font-size: 17px;
 }
 
@@ -169,13 +167,14 @@ header {
 .popular-movie {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 160px;
+    grid-template-rows: auto;
     grid-gap: 20px;
 }
 
 .popular-movie a img {
     transition: .3s;
     border-radius: 2px;
+    text-align: center;
 }
 
 .popular-movie a img:hover {
